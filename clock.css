@@ -27,6 +27,19 @@
   	z-index: -1; /* set the z-index to make it display behind other content */
 }
 
+.center-circle {
+	top: 49.8%;
+	left: 49.8%;
+	transform: translate(-50%, -50%); /* center the circle */
+	position: fixed;
+	width: 1.5vw;
+	height: 1.5vw;
+	border-radius: 50%;
+	background-color: black;
+  	pointer-events: none; /* prevent the circle from intercepting any mouse events */
+  	z-index: -1; /* set the z-index to make it display behind other content */
+}
+
 #hour,
 #minute,
 #second {
