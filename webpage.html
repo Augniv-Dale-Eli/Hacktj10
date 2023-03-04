@@ -1,24 +1,98 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Login Page</title>
-	<link rel="stylesheet" type="text/css" href="design.css">
-</head>
-<body>
-	<div class="login-box">
-		<h1>Login</h1>
-		<form>
-			<label for="username">Username</label>
-			<input type="text" placeholder="Enter Username" name="username" id="username" required>
-
-			<label for="password">Password</label>
-			<input type="password" placeholder="Enter Password" name="password" id="password" required>
-
-			<button type="submit" onclick="validateLogin()">Login</button>
-		</form>
-		<p>Don't have an account yet? <a href="blank.html">Signup here</a></p>
-	</div>
-
-	<script src="main.js"></script>
-</body>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./design.css" />
+    <title>Join Now</title>
+  </head>
+  <body>
+    <section class="front-page">
+      <nav>
+        <div class="logo">
+          <h1>Calendar</h1>
+        </div>
+        <div class="links">
+          <a href="#">our story</a>
+          <a href="#">practice</a>
+          <a href="#">classes</a>
+        </div>
+        <svg
+          width="44"
+          height="18"
+          viewBox="0 0 44 18"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <line
+            class="line"
+            y1="1"
+            x2="44"
+            y2="1"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            class="line"
+            y1="9"
+            x2="27"
+            y2="9"
+            stroke="white"
+            stroke-width="2"
+          />
+          <line
+            class="line"
+            y1="17"
+            x2="11"
+            y2="17"
+            stroke="white"
+            stroke-width="2"
+          />
+        </svg>
+      </nav>
+      <div class="selling-point">
+        <h2>Sort Your Schedule</h2>
+        <h3>
+          Best Planner Schedule TO Date
+        </h3>
+        <div class="ctas">
+          <button class="cta-main">
+            <a href="mainpage.html">Go To Your Calendar Now</a>
+          </button>
+        </div>
+      </div>
+    </section>
+    <section class="classes">
+      <div class="classes-description">
+      </div>
+    </section>
+    <section class="about">
+      <div class="our-story">
+        <h2>Our story...</h2>
+        <p>
+          
+        </p>
+      </div>
+    </section>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/gsap.min.js"
+      integrity="sha512-Mf/xUqfWvDIr+1B6zfnIDIiG7XHzyP/guXUWgV6PgaQoIFeXkJQR5XWh9fqAiCiRCpemabt3naV4jhDWVnuYDQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.1/ScrollTrigger.min.js"
+      integrity="sha512-YzMW3OzvgtVpIIPPpjnCy8wVTq5slHRrxnLH1oD5dkVjZf8+8DJYd+GYmmWXZNmroTqKXFFzFS3XZ/LBvaNgZg=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./main.js"></script>
+  </body>
 </html>

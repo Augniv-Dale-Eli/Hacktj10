@@ -1,18 +1,39 @@
-function validateSignup() {
-	var username = document.getElementById("username").value;
-	var password = document.getElementById("password").value;
-	var confirmPassword = document.getElementById("confirm-password").value;
+const burger = document.querySelector("nav svg");
 
-	if (password != confirmPassword) {
-		alert("Passwords do not match");
-		return false;
-	} else {
-		// Code to save the user's details goes here
-		alert("Signup successful!");
-		window.location.href = "login.html";
-	}
-}
+burger.addEventListener("click", () => {
+  if (burger.classList.contains("active")) {
+    gsap.to(".links", { x: "100%" });
+    gsap.to(".line", { stroke: "white" });
+    gsap.set("body", { overflow: "auto" });
+    gsap.set("body", { overflowX: "hidden" });
+  } else {
+    gsap.to(".links", { x: "0%" });
+    gsap.to(".line", { stroke: "black" });
+    gsap.fromTo(
+      ".links a",
+      { opacity: 0, y: 0 },
+      { opacity: 1, y: 20, delay: 0.25, stagger: 0.25 }
+    );
+    gsap.set("body", { overflow: "hidden" });
+  }
+  burger.classList.toggle("active");
+});
 
-function validateLogin() {
-	var username = document.getElementById
-}
+const videos = gsap.utils.toArray(".video");
+gsap.set(videos, { opacity: 0 });
+
+videos.forEach((video) => {
+  ScrollTrigger.create({
+    trigger: video,
+    start: "top center",
+    end: "bottom center",
+
+    onEnter: () => {
+      gsap.to(video, { opacity: 1 });
+      video.play();
+    },
+    onEnterBack: () => video.play(),
+    onLeave: () => video.pause(),
+    onLeaveBack: () => video.pause(),
+  });
+});
