@@ -1,10 +1,18 @@
-function validateLogin() {
+function validateSignup() {
 	var username = document.getElementById("username").value;
 	var password = document.getElementById("password").value;
+	var confirmPassword = document.getElementById("confirm-password").value;
 
-	if (username == "admin" && password == "password") {
-		window.location.href = "blank.html";
+	if (password != confirmPassword) {
+		alert("Passwords do not match");
+		return false;
 	} else {
-		alert("Invalid Login");
+		// Code to save the user's details goes here
+		alert("Signup successful!");
+		window.location.href = "login.html";
 	}
+}
+
+function validateLogin() {
+	var username = document.getElementById
 }

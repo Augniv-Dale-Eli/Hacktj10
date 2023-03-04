@@ -1,12 +1,27 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+	<title>Signup Page</title>
+	<link rel="stylesheet" type="text/css" href="design.css">
 </head>
 <body>
-    
+	<div class="signup-box">
+		<h1>Signup</h1>
+		<form>
+			<label for="username">Username</label>
+			<input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+			<label for="password">Password</label>
+			<input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+			<label for="confirm-password">Confirm Password</label>
+			<input type="password" placeholder="Confirm Password" name="confirm-password" id="confirm-password" required>
+
+			<button type="submit" onclick="validateSignup()">Signup</button>
+		</form>
+		<p>Already have an account? <a href="webpage.html">Login here</a></p>
+	</div>
+
+	<script src="main.js"></script>
 </body>
 </html>
