@@ -15,14 +15,15 @@
 }
 
 .circle {
-	top: 50%;
-	left: 50%;
+	top: 49.3%;
+	left: 49.75%;
 	transform: translate(-50%, -50%); /* center the circle */
 	position: fixed;
-	width: 35vw;
-	height: 35vw;
+	width: 31vw;
+	height: 31vw;
 	border-radius: 50%;
-	border: 10px solid black; /* set the border to a thick white line */
+	opacity: .5;
+	border: 10px solid red; /* set the border to a thick white line */
   	pointer-events: none; /* prevent the circle from intercepting any mouse events */
   	z-index: -1; /* set the z-index to make it display behind other content */
 }
