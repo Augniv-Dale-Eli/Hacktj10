@@ -38,18 +38,20 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
-    <h1 class="animate__animated animate__slideInLeft">An animated element</h1>
-    <form>
+    <h1 style="font-size:5vw" class="animate__animated animate__slideInLeft">TimeKeep</h1>
+    <form class="animate__animated animate__slideInLeft">
+    <div class="draggable"> 
       <label for="date">Date:</label>
-      <input type="date" id="date">
+      <input type="date" id="date" style="color: white; background-color: transparent; border-color: white;">
       <br>
       <label for="time">Time:</label>
-      <input type="time" id="time">
+      <input type="time" id="time" style="color: white; background-color: transparent; border-color: white;" >
       <br>
       <label for="event">Event:</label>
-      <input type="text" id="event">
+      <input type="text" id="event" style="color: white; background-color: transparent; border-color: white;">
       <br>
-      <input type="button" value="Add Event" onclick="addEvent()">
+      <input type="button" value="Add Event" onclick="addEvent()" style="color: white; background-color: transparent; border-color: white;">
+    </div>
     </form>
     <div id="events"></div>
     <script src="script.js"></script>
