@@ -1,12 +1,3 @@
-// class ClockData{
-//     int currentTime;
-//     int[] minuteArr = new int[1440];
-//     public ClockData(){
-//         currentTime = 
-        
-
-//     }
-// }
 class Test{
     public static void main(String[] Args){
         EventDescription help = new EventDescription("event", 5, 59, 10, 59, "AM", "PM", "place");

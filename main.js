@@ -1,3 +1,4 @@
+console.log("Hello world")
 const burger = document.querySelector("nav svg");
 
 burger.addEventListener("click", () => {
