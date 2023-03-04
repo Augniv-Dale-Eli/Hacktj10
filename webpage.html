@@ -2,21 +2,22 @@
 <html>
 <head>
 	<title>Login Page</title>
-	<link rel="stylesheet" href="design.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <body>
-	<div class="container">
+	<div class="login-box">
 		<h1>Login</h1>
 		<form>
-			<label for="username">Username:</label>
-			<input type="text" id="username" name="username">
-			<label for="password">Password:</label>
-			<input type="password" id="password" name="password">
-			<button type="submit">Login</button>
+			<label for="username">Username</label>
+			<input type="text" placeholder="Enter Username" name="username" id="username" required>
+
+			<label for="password">Password</label>
+			<input type="password" placeholder="Enter Password" name="password" id="password" required>
+
+			<button type="submit" onclick="validateLogin()">Login</button>
 		</form>
-		<p>Don't have an account? <a href="#">Sign up</a></p>
 	</div>
-	<script src="main.js"></script>
+
+	<script src="script.js"></script>
 </body>
 </html>
-

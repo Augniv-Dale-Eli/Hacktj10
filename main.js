@@ -1,8 +1,10 @@
-const form = document.querySelector('form');
+function validateLogin() {
+	var username = document.getElementById("username").value;
+	var password = document.getElementById("password").value;
 
-form.addEventListener('submit', e => {
-	e.preventDefault();
-	const username = document.querySelector('#username').value;
-	const password = document.querySelector('#password').value;
-	// TODO: handle login logic here
-});
+	if (username == "admin" && password == "password") {
+		window.location.href = "blank.html";
+	} else {
+		alert("Invalid Login");
+	}
+}
