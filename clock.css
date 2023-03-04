@@ -1,12 +1,32 @@
 #clockContainer {
-    position: relative;
-    margin: auto;
-    height: 40vw;
-    /*to make the height and width responsive*/
-    width: 40vw;
-    /*setting our background image*/
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* center the circle */
+	height: 40vw;
+	/*to make the height and width responsive*/
+	width: 40vw;
+	/*setting our background image*/
+	background-size: 100%;
 }
-  
+
+.container {
+	position: relative;
+}
+
+.circle {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* center the circle */
+	position: fixed;
+	width: 35vw;
+	height: 35vw;
+	border-radius: 50%;
+	border: 10px solid black; /* set the border to a thick white line */
+  	pointer-events: none; /* prevent the circle from intercepting any mouse events */
+  	z-index: -1; /* set the z-index to make it display behind other content */
+}
+
 #hour,
 #minute,
 #second {
@@ -17,19 +37,19 @@
 }
   
 #hour {
-    width: 1.8%;
-    height: 25%;
-    top: 25%;
-    left: 48.85%;
-    opacity: 0.8;
+	width: 1%;
+	height: 25%;
+	top: 25%;
+	left: 48.85%;
+	opacity: 0.8;
 }
   
 #minute {
-    width: 1.6%;
-    height: 30%;
-    top: 19%;
-    left: 48.9%;
-    opacity: 0.8;
+	width: 1%;
+	height: 30%;
+	top: 19%;
+	left: 48.9%;
+	opacity: 0.8;
 }
   
 #second {
