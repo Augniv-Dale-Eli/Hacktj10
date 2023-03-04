@@ -30,12 +30,12 @@
 #hour,
 #minute,
 #second {
-	position: absolute;
-	background: black;
-	border-radius: 10px;
-	transform-origin: bottom;
+    position: absolute;
+    background: black;
+    border-radius: 10px;
+    transform-origin: bottom;
 }
-
+  
 #hour {
 	width: 1%;
 	height: 25%;
@@ -43,7 +43,7 @@
 	left: 48.85%;
 	opacity: 0.8;
 }
-
+  
 #minute {
 	width: 1%;
 	height: 30%;
@@ -51,11 +51,11 @@
 	left: 48.9%;
 	opacity: 0.8;
 }
-
+  
 #second {
-	width: 1%;
-	height: 40%;
-	top: 9%;
-	left: 49.25%;
-	opacity: 0.8;
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.25%;
+    opacity: 0.8;
 }
