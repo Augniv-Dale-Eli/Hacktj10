@@ -19,12 +19,25 @@
 	left: 50%;
 	transform: translate(-50%, -50%); /* center the circle */
 	position: fixed;
-	width: 35vw;
-	height: 35vw;
 	border-radius: 50%;
-	border: 10px solid black; /* set the border to a thick white line */
   	pointer-events: none; /* prevent the circle from intercepting any mouse events */
   	z-index: -1; /* set the z-index to make it display behind other content */
+	width: 35vw;
+	height: 35vw;
+	border: 10px solid black; /* set the border to a thick white line */
+}
+
+.center {
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%); /* center the circle */
+	position: fixed;
+	border-radius: 50%;
+  	pointer-events: none; /* prevent the circle from intercepting any mouse events */
+  	z-index: -1; /* set the z-index to make it display behind other content */
+	width: 1vw;
+	height: 1vw;
+	background-color: solid black;
 }
 
 #hour,
