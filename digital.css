@@ -1,0 +1,24 @@
+.rounded-box {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 30%;
+    height: 200px;
+    margin: auto;
+    border-radius: 20px;
+    background-color: #1f2027;
+    border: 15px solid white;
+    text-align: center; /* center text horizontally */
+  }
+  h1 {
+    font-size: 8rem; /* make the font size larger */
+    margin-top: 1.5rem; /* add some space above the text */
+    color: white;
+  }
+
+img {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+   }
