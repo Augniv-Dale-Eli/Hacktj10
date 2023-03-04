@@ -28,16 +28,16 @@
 }
 
 .center-circle {
-	top: 49.8%;
+	top: 49.2%;
 	left: 49.8%;
-	transform: translate(-50%, -50%); /* center the circle */
+	transform: translate(-50%, -50%); 
 	position: fixed;
-	width: 1.5vw;
-	height: 1.5vw;
+	width: .5vw;
+	height: .5vw;
 	border-radius: 50%;
 	background-color: black;
-  	pointer-events: none; /* prevent the circle from intercepting any mouse events */
-  	z-index: -1; /* set the z-index to make it display behind other content */
+  	pointer-events: none; 
+  	z-index: -1; 
 }
 
 #hour,
@@ -52,8 +52,8 @@
 #hour {
 	width: 1%;
 	height: 25%;
-	top: 25%;
-	left: 48.85%;
+	top: 24%;
+	left: 49%;
 	opacity: 0.8;
 }
   
@@ -69,6 +69,6 @@
     width: 1%;
     height: 40%;
     top: 9%;
-    left: 49.25%;
+    left: 49%;
     opacity: 0.8;
 }
