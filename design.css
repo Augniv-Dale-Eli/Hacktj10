@@ -93,9 +93,7 @@
   /*
   Button Stuff is ctas
   */
-  .ctas {
-    margin-top: 2rem;
-  }
+  
   .ctas button {
     padding: 1rem;
     font-size: 1rem;
@@ -103,6 +101,7 @@
     border-radius: 0.5rem;
     box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.216);
     margin: 1rem;
+    margin-top: 400px;
   }
   .cta-main {
     background-color: var(--main-color);
