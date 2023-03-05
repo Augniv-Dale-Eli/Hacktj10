@@ -26,8 +26,7 @@ function addEvent() {
       var cell1 = row.insertCell(0);
       var cell2 = row.insertCell(1);
       cell1.innerHTML = eventNames[currIndex]
-      var store = "From " + startTimes[currIndex] + " to " + endTimes[currIndex];
-      cell2.innerHTML = store;
+      cell2.innerHTML = "From " + startTimes[currIndex] + " to " + endTimes[currIndex];;
       currIndex++;
     }
   }
