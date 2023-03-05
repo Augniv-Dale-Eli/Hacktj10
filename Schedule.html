@@ -40,8 +40,7 @@
   <body>
     <h1 style="font-size:5vw" class="animate__animated animate__slideInLeft">TimeKeep</h1>
     <form class="animate__animated animate__slideInLeft">
-    <div class="draggable"> 
-      <label for="date">Date:</label>
+      <label for="date" style="color:white">Date:</label>
       <input type="date" id="date" style="color: white; background-color: transparent; border-color: white;">
       <br>
       <label for="time">Time:</label>
@@ -51,7 +50,6 @@
       <input type="text" id="event"  style="color: white; background-color: transparent; border-color: white;" placeholder = "Event Name">
       <br>
       <input type="button" value="Add Event" onclick="addEvent()" style="color: white; background-color: transparent; border-color: white;">
-    </div>
     </form>
     <div id="events"></div>
     <script src="script.js"></script>
