@@ -38,20 +38,26 @@
   <head>
     <link rel="stylesheet" href="style.css">
   </head>
+  <script src="digitlevents.js"></script>
   <body>
-    <h1 style="font-size:5vw; color: white; font-family: Verdana;" class="animate__animated animate__slideInLeft">TimeKeep</h1>
+    <h1 style="font-size:5vw; font-family: Verdana;" class="animate__animated animate__slideInLeft">TimeKeep</h1>
     <form class="animate__animated animate__slideInLeft">
-      <label for="date" style="color:white; font-family: Verdana;">Date:</label>
-      <input type="date" id="date" style="color: white; background-color: transparent; border-color: white; font-family: Verdana;">
+      <label for="date" style="color:white; font-family: Verdana; font-size:2vw;">Date:</label>
+      <input type="date" id="date" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;">
       <br>
-      <label style="color: white; font-family: Verdana;" for="time">Time:</label>
-      <input type="time" id="time" style="color: white; background-color: transparent; border-color: white; font-family: Verdana;" >
+      <label for="time" style="color:white; font-family: Verdana;; font-size:2vw;">Start Time:</label>
+      <input type="time" id="time" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;" >
       <br>
-      <label for="event" style="color: white; font-family: Verdana;">Event:</label>
-      <input type="text" id="event"  style="color: white; background-color: transparent; border-color: white; font-family: Verdana;" placeholder = "Event Name">
+      <label for="time2" style="color:white; font-family: Verdana;; font-size:2vw;">End Time:</label>
+      <input type="time" id="time2" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;" >
       <br>
-      <input type="button" value="Add Event" onclick="addEvent()" style="color: white; background-color: transparent; border-color: white; font-family: Verdana;">
+      <label for="event" style="color:white; font-family: Verdana;; font-size:2vw;">Event:</label>
+      <input type="text" id="event"  style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;" placeholder = "Event Name">
+      <br>
+      <label for="desc" style="color:white; font-family: Verdana;; font-size:2vw;">Description:</label>
+      <input type="text" id="desc"  style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;" placeholder = "Description">
+      <br/><br/>
+      <input type="button" value="Add Event" onclick="addEvent()" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;">
     </form>
-    <div id="events" style="color: white; font-family: Verdana;"><script src="script.js"></script></div>
   </body>
 </html>
