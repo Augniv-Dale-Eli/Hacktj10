@@ -21,8 +21,8 @@ function addEvent() {
       var row = table.insertRow(table.rows.length);
       var cell1 = row.insertCell(0);
       var cell2 = row.insertCell(1);
-      cell1.innerHTML = eventNames[currIndex]
-      cell2.innerHTML = "From " + startTimes[currIndex] + " to " + endTimes[currIndex];;
+      cell1.innerHTML = eventNames[currIndex];
+      cell2.innerHTML = "From " + startTimes[currIndex] + " to " + endTimes[currIndex];
       currIndex++;
     }
   }
@@ -44,3 +44,4 @@ function addEvent() {
     rectangle2.style.display="none"
     rectangle3.style.display="none"
   }
+  
