@@ -10,7 +10,7 @@ function addEvent() {
     const endTime = document.getElementById("time2").value;
     const event = document.getElementById("event").value;
     const desc = document.getElementById("desc").value;
-    if(date!=''&&time!=''&&endTime!=''&&event!=''&&desc!=''){
+    if(date!=''&&time!=''&&endTime!=''&&event!=''&&desc!=''&&time<endTime&&date.length<=10){
       dates.push(date);
       startTimes.push(time);
       endTimes.push(endTime);
