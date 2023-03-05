@@ -27,4 +27,5 @@ function addEvent() {
   function getInfoBrief(index){
     return "From " + startTimes[index] + " to " + endTimes[index] + ", " + eventNames[index];
   }
+
   
