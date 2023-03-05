@@ -101,3 +101,7 @@
 .dropDown {
     display: none;
   }
+
+.fixed_header {
+    overflow: scroll;
+  }
