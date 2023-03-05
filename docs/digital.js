@@ -12,3 +12,5 @@ setInterval(() => {
     document.getElementById("clock").innerHTML = time;
     
   }, 1000);
+
+
