@@ -13,10 +13,17 @@
         <link rel="stylesheet" href="digital.css">
         <script src="digital.js"></script>
         <script src="digitlevents.js"></script>
-
+        <style>
+          body {
+            background-image: url("images/back2.png");
+            background-size: 100%;
+            background-repeat: no-repeat;
+            background-position: center top;
+          }
+      </style>
     </head>
     <body style="background-color: #131315">
-        <a href="index.html"><img src="images/logo2.png" alt="Home" width="80" class="right"/></a>
+        <a href="index.html"><img src="images/logo4.png" alt="Home" width="90" class="right"/></a>
         <a href="Schedule.html"><img src="images/ana2.png" alt="Analogue" width="150" /></a>
         <img src="images/dig1.png" alt="Digital" width="150">
         <div class="rounded-box">
@@ -28,27 +35,27 @@
     <body>
     <h1 style="font-size:5vw; font-family: Verdana;" class="animate__animated animate__slideInLeft">TimeKeep</h1>
     <form class="animate__animated animate__slideInLeft">
-      <label for="date" style="color:white; font-family: Verdana; font-size:2vw; font-weight: bold;">Date:</label>
-      <input type="date" id="date" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;">
+      <label for="date" style="color:lightblue; font-family: Verdana; font-size:2vw; font-weight: bold;">Date:</label>
+      <input type="date" id="date" style="color: lightblue; background-color: transparent; border-color: lightblue; font-family: Verdana; font-size:1.5vw;">
       <br>
-      <label for="time" style="color:white; font-family: Verdana;; font-size:2vw; font-weight: bold;">Start Time:</label>
-      <input type="time" id="time" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;" >
+      <label for="time" style="color:lightblue; font-family: Verdana;; font-size:2vw; font-weight: bold;">Start Time:</label>
+      <input type="time" id="time" style="color: lightblue; background-color: transparent; border-color: lightblue; font-family: Verdana; font-size:1.5vw;" >
       <br>
-      <label for="time2" style="color:white; font-family: Verdana;; font-size:2vw; font-weight: bold;">End Time:</label>
-      <input type="time" id="time2" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;" >
+      <label for="time2" style="color:lightblue; font-family: Verdana;; font-size:2vw; font-weight: bold;">End Time:</label>
+      <input type="time" id="time2" style="color: lightblue; background-color: transparent; border-color: lightblue; font-family: Verdana; font-size:1.5vw;" >
       <br>
-      <label for="event" style="color:white; font-family: Verdana;; font-size:2vw; font-weight: bold;">Event:</label>
-      <input type="text" id="event" width=""  style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;" placeholder = "Event Name">
+      <label for="event" style="color:lightblue; font-family: Verdana;; font-size:2vw; font-weight: bold;">Event:</label>
+      <input type="text" id="event" width=""  style="color: lightblue; background-color: transparent; border-color: lightblue; font-family: Verdana; font-size:1.5vw;" placeholder = "Event Name">
       <br>
       <br/>
-      <input type="button" value="Add Event" onclick="addEvent()" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;">
+      <input type="button" value="Add Event" onclick="addEvent()" style="color: lightblue; background-color: transparent; border-color: lightblue; font-family: Verdana; font-size:1.5vw;">
     </form>
 
     <div id="events"></div>
     <script src="digitlevents.js"></script>
-    <button type="button" onclick="showRectangle()" id="up" class="up" style="color: #151718;"><img src="images/dropUp.png" width="50" style="bottom: 20px; right: 20px; position: fixed;"></button>
+    <button type="button" onclick="showRectangle()" id="up" class="up" style="color: #151718;"><img src="images/dropUp2.png" width="50" style="bottom: 20px; right: 20px; position: fixed;"></button>
     <div class="dropBox"></div>
-    <button type="button" onclick="hideRectangle()" style="color: #151718;" class="dropDown"><img src="images/dropDown.png" width="50" style="bottom: 52%; right: 10px; position: fixed;"></button>
+    <button type="button" onclick="hideRectangle()" style="color: #151718;" class="dropDown"><img src="images/dropDown2.png" width="50" style="bottom: 52%; right: 10px; position: fixed;"></button>
     <html>
   <head>
     <style>
@@ -65,10 +72,10 @@
       .fixed_header tbody {
         width: 30%;
         overflow: auto;
-        color: #fff;
+        color: lightblue;
       }
       .fixed_header thead {
-        color: #fff;
+        color: lightblue;
       }
       .fixed_header th,
       .fixed_header td {
@@ -82,12 +89,11 @@
     <table class="fixed_header" id="eventTable">
       <thead>
         <tr>
-          <th>Event</th>
-          <th>Timespan</th>
+          <th style="font-family: Verdana;">Event</th>
+          <th style="font-family: Verdana;">Timespan</th>
         </tr>
       </thead>
       
     </table>
-
   </body>
 </html>
