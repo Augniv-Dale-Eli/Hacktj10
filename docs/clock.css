@@ -105,3 +105,20 @@
 .fixed_header {
     overflow: scroll;
   }
+
+  .clock-container {
+	position: fixed;
+	bottom: 20px;
+	left: 50%;
+	transform: translateX(-50%);
+  }
+  
+  .clock {
+	font-size: 2rem;
+	font-family: Verdana;
+	font-weight: bold;
+	text-align: center;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+  }

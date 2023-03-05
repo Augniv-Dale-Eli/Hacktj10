@@ -13,7 +13,8 @@
   }
   h1 {
     font-size: 8rem; /* make the font size larger */
-    margin-top: 1.5rem; /* add some space above the text */
+    font-family: Verdana;
+    margin-top: 1rem; /* add some space above the text */
     color: white;
   }
 
