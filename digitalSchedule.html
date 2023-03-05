@@ -1,10 +1,19 @@
 <!DOCTYPE html>
 <html>
     <head>
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+  />
+    <head>
+        
         <title>TimeKeep</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="stylesheet" href="digital.css">
         <script src="digital.js"></script>
+        <script src="digitlevents.js"></script>
+        
+
     </head>
     <body style="background-color: #27272C">
         <a href="webpage.html"><img src="home.png" alt="Home" width="40" class="right"/></a>
@@ -15,4 +24,22 @@
         </div>
         <script src="digital.js"></script>
     </body>
+
+    <body>
+    <h1 style="font-size:5vw" class="animate__animated animate__slideInLeft">TimeKeep</h1>
+    <form class="animate__animated animate__slideInLeft">
+      <label for="date" style="color:white">Date:</label>
+      <input type="date" id="date" style="color: white; background-color: transparent; border-color: white;">
+      <br>
+      <label for="time">Time:</label>
+      <input type="time" id="time" style="color: white; background-color: transparent; border-color: white;" >
+      <br>
+      <label for="event">Event:</label>
+      <input type="text" id="event"  style="color: white; background-color: transparent; border-color: white;" placeholder = "Event Name">
+      <br>
+      <input type="button" value="Add Event" onclick="addEvent()" style="color: white; background-color: transparent; border-color: white;">
+    </form>
+    <div id="events"></div>
+    <script src="script.js"></script>
+  </body>
 </html>
