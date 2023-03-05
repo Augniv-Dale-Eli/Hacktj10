@@ -28,4 +28,16 @@ function addEvent() {
     return "From " + startTimes[index] + " to " + endTimes[index] + ", " + eventNames[index];
   }
 
+  function showRectangle() {
+    var rectangle = document.querySelector(".dropBox");
+    var rectangle2 = document.querySelector(".dropDown");
+    rectangle.style.display = "block";
+    rectangle2.style.display="block"
+  }
   
+  function hideRectangle() {
+    var rectangle = document.querySelector(".dropBox");
+    var rectangle2 = document.querySelector(".dropDown");
+    rectangle.style.display = "none";
+    rectangle2.style.display="none"
+  }

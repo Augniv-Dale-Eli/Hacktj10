@@ -24,17 +24,21 @@
    }
 
 .dropBox {
-  position: fixed;
-  bottom: 0px;
-  right: 0px;
-  width: 30%;
-  height: 50%;
-  background-color: black;
-  border: 4px solid white;
-  border-radius: 10px;
-}
-
-.dropBox,
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 30%;
+    height: 50%;
+    background-color: #2a2a33;
+    border: 4px solid white;
+    border-radius: 10px;
+  }
+  
+.dropBox {
+    display: none;
+  }
+  
 .dropDown {
-  visibility: hidden
-}
+    display: none;
+  }
+  

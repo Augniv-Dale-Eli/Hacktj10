@@ -22,7 +22,7 @@
         </style>
     </head>
     <body style="background-color: #27272C">
-        <a href="index.html"><img src="images/home.png" alt="Home" width="40" class="right"/></a>
+        <a href="index.html"><img src="images/logo2.png" alt="Home" width="80" class="right"/></a>
         <a href="Schedule.html"><img src="images/ana2.png" alt="Analogue" width="150" /></a>
         <img src="images/dig1.png" alt="Digital" width="150">
         <div class="rounded-box">
@@ -51,10 +51,11 @@
       <br/><br/>
       <input type="button" value="Add Event" onclick="addEvent()" style="color: white; background-color: transparent; border-color: white; font-family: Verdana; font-size:1.5vw;">
     </form>
+
     <div id="events"></div>
     <script src="digitlevents.js"></script>
-    <button type="button" onclick=""><img src="images/dropUp.png" width="50"style="bottom: 20px; right: 20px; position: fixed;"></button>
+    <button type="button" onclick="showRectangle()" id="up" class="up"><img src="images/dropUp.png" width="50" style="bottom: 20px; right: 20px; position: fixed;"></button>
     <div class="dropBox"></div>
-    <button type="button" onclick="" class="dropDown"><img src="images/dropDown.png" width="50"style="bottom: 52%; right: 10px; position: fixed;"></button>
+    <button type="button" onclick="hideRectangle()" class="dropDown"><img src="images/dropDown.png" width="50" style="bottom: 52%; right: 10px; position: fixed;"></button>
   </body>
 </html>
