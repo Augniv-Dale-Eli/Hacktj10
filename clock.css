@@ -10,6 +10,12 @@
 	background-size: 100%;
 }
 
+.right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+   }
+
 .container {
 	position: relative;
 }
@@ -70,3 +76,4 @@
     left: 49%;
 }
 .eventcal .eventcal-content-wrapper { background: #000000; }
+
