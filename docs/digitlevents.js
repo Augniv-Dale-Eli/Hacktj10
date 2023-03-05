@@ -31,13 +31,17 @@ function addEvent() {
   function showRectangle() {
     var rectangle = document.querySelector(".dropBox");
     var rectangle2 = document.querySelector(".dropDown");
+    var rectangle3 = document.querySelector(".fixed_header");
     rectangle.style.display = "block";
     rectangle2.style.display="block"
+    rectangle3.style.display="block"
   }
   
   function hideRectangle() {
     var rectangle = document.querySelector(".dropBox");
     var rectangle2 = document.querySelector(".dropDown");
+    var rectangle3 = document.querySelector(".fixed_header");
     rectangle.style.display = "none";
     rectangle2.style.display="none"
+    rectangle3.style.display="none"
   }

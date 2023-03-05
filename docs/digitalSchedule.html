@@ -55,37 +55,35 @@
 
     <div id="events"></div>
     <script src="digitlevents.js"></script>
-    <button type="button" onclick="showRectangle()" id="up" class="up"><img src="images/dropUp.png" width="50" style="bottom: 20px; right: 20px; position: fixed;"></button>
+    <button type="button" onclick="showRectangle()" id="up" class="up" style="color: #151718;"><img src="images/dropUp.png" width="50" style="bottom: 20px; right: 20px; position: fixed;"></button>
     <div class="dropBox"></div>
-    <button type="button" onclick="hideRectangle()" class="dropDown"><img src="images/dropDown.png" width="50" style="bottom: 52%; right: 10px; position: fixed;"></button>
-
+    <button type="button" onclick="hideRectangle()" style="color: #151718;" class="dropDown"><img src="images/dropDown.png" width="50" style="bottom: 52%; right: 10px; position: fixed;"></button>
     <html>
   <head>
-    <title>Title of the document</title>
     <style>
       .fixed_header {
-        width: 400px;
+        width: 30%;
         table-layout: fixed;
         border-collapse: collapse;
+        position: fixed;
+        right: 0px;
+        bottom: 30px;
+        display: none;
+        height: 45%;
       }
       .fixed_header tbody {
-        display: block;
-        width: 100%;
+        width: 30%;
         overflow: auto;
-        height: 100px;
-      }
-      .fixed_header thead tr {
-        display: block;
+        color: #fff;
       }
       .fixed_header thead {
-        background: black;
         color: #fff;
       }
       .fixed_header th,
       .fixed_header td {
         padding: 5px;
         text-align: left;
-        width: 200px;
+        width: 30%;
       }
     </style>
   </head>
@@ -95,53 +93,34 @@
         <tr>
           <th>Col 1</th>
           <th>Col 2</th>
-          <th>Col 3</th>
         </tr>
       </thead>
       <tbody>
         <tr>
           <td>1</td>
           <td>2</td>
-          <td>3</td>
-          <td>4</td>
-          <td>5</td>
         </tr>
         <tr>
           <td>6</td>
           <td>7</td>
-          <td>8</td>
-          <td>9</td>
-          <td>10</td>
+          
         </tr>
         <tr>
           <td>11</td>
           <td>12</td>
-          <td>13</td>
-          <td>14</td>
-          <td>15</td>
+          
         </tr>
         <tr>
           <td>16</td>
           <td>17</td>
-          <td>18</td>
-          <td>19</td>
-          <td>20</td>
+          
         </tr>
         <tr>
           <td>21</td>
           <td>22</td>
-          <td>23</td>
-          <td>24</td>
-          <td>25</td>
+          
         </tr>
       </tbody>
     </table>
   </body>
-</html>
-
-  </body>
-
-
-
-  
 </html>
