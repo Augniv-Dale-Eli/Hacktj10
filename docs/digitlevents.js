@@ -21,6 +21,12 @@ function addEvent() {
       console.log(dates[currIndex]);
       console.log(eventNames[currIndex]);
       console.log(descriptions[currIndex]);
+      var table = document.getElementById("eventTable");
+      var row = table.insertRow(table.rows.length);
+      var cell1 = row.insertCell(0);
+      var cell2 = row.insertCell(1);
+      cell1.innerHTML = getInfoBrief(currIndex);
+      cell2.innerHTML = "NEW CELL2";
       currIndex++;
     }
   }
