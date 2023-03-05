@@ -77,3 +77,27 @@
 }
 .eventcal .eventcal-content-wrapper { background: #000000; }
 
+.right {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+   }
+
+.dropBox {
+    position: fixed;
+    bottom: 0px;
+    right: 0px;
+    width: 30%;
+    height: 50%;
+    background-color: rgb(53, 53, 53);
+    border: 4px solid white;
+    border-radius: 10px;
+  }
+  
+.dropBox {
+    display: none;
+  }
+  
+.dropDown {
+    display: none;
+  }
