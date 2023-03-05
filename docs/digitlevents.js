@@ -25,13 +25,11 @@ function addEvent() {
       var row = table.insertRow(table.rows.length);
       var cell1 = row.insertCell(0);
       var cell2 = row.insertCell(1);
-      cell1.innerHTML = getInfoBrief(currIndex);
-      cell2.innerHTML = "NEW CELL2";
+      cell1.innerHTML = eventNames[currIndex]
+      var store = "From " + startTimes[currIndex] + " to " + endTimes[currIndex];
+      cell2.innerHTML = store;
       currIndex++;
     }
-  }
-  function getInfoBrief(index){
-    return "From " + startTimes[index] + " to " + endTimes[index] + ", " + eventNames[index];
   }
 
   function showRectangle() {
